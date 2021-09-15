@@ -220,10 +220,10 @@ pipelines.append(('DTR',  Pipeline([('DTR', DecisionTreeRegressor())])))
 
 fig_7 =go.Figure()
 
-fig_7.add_trace(go.Scatter(y=df[dfClean.DATA >= '2020'].VENDAS,name='True'))
+fig_7.add_trace(go.Scatter(y=df[df.DATA >= '2020'].VENDAS,name='True'))
 
 results_4 = []
-
+        
 for name, model in pipelines:
 
         model.fit(X_train, Y_train)
@@ -238,7 +238,8 @@ for name, model in pipelines:
         cv_std = cv_results.mean()
         
         results_4.append((name,model_score,model_r2score,cv_mean,cv_std))
-    
+        
+        fig_7.add_trace(go.Scatter(y=Y_pred*10,name=name))
 
 
 

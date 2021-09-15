@@ -38,7 +38,7 @@ auth = dash_auth.BasicAuth(
     VALID_USERNAME_PASSWORD_PAIRS
 )
 
-app.title = "Sales Analytics!"
+app.title = "Previsão de Vendas"
 
 app.layout = html.Div(
         children=[

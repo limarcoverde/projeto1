@@ -11,11 +11,11 @@ def CreateHeader():
                         #html.P(children="🔥", className="header-emoji"),
                         html.H1(
                                 className="header-title",
-                                children="📈Sales Analytics", 
+                                children="📈Previsão de Vendas", 
                         ),
                         html.P(
                                 className="header-description",
-                                children="Analise de vendas de um restaurante localizado no Rio Grande do sul no periodo de 2 anos.",
+                                children="Analise e previsão de vendas de um restaurante localizado no Rio Grande do sul no periodo de 2 anos.",
                         ),
                 ],
         )        
