@@ -58,7 +58,7 @@ app.layout = html.Div(
                                                 options=[{"label": period, "value": p} for p,period in [('M','Mês'),('Q','Trimestre'),('Y','Ano')]],
                                                 value="M")
                         ]),
-                CreateGraph("price-chart","Média de vendas"),
+                CreateGraph("price-chart","Gráfico de vendas"),
                 CreateMenu([ 
                         CreateSlider(
                                         id='year-slider',
