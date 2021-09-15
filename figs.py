@@ -8,32 +8,24 @@ from dash.dependencies import Output, Input
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-import dash_table
 
 import pandas as pd
-import numpy as np
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import plotly.io as pio
 from sklearn.metrics import r2_score
 import numpy as np
 import pandas as pd
-from sklearn import datasets
 from sklearn.feature_selection import RFE
-from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import KFold
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-import matplotlib.pyplot as plt
 
 from sklearn.neural_network import MLPRegressor
 from sklearn.linear_model import LinearRegression
-from sklearn.linear_model import Lasso
 from sklearn.linear_model import ElasticNet
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.neighbors import KNeighborsRegressor
-from sklearn.ensemble import GradientBoostingRegressor
 
 import pandas as pd
 import numpy as np
