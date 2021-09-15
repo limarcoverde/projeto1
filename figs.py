@@ -155,7 +155,7 @@ Y_train = Y[dfClean.DATA < '2020']
 Y_test  = Y[dfClean.DATA >= '2020'] 
 
 pipelines=[]
-pipelines.append(('MLPR', Pipeline([('MLPR', MLPRegressor(max_iter=1000))])))
+#pipelines.append(('MLPR', Pipeline([('MLPR', MLPRegressor(max_iter=1000))])))
 pipelines.append(('LR', Pipeline([('LR',LinearRegression())])))
 
 results_3 = []

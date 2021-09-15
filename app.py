@@ -30,6 +30,7 @@ external_stylesheets = [
 ]
 
 app = dash.Dash(__name__,external_stylesheets=external_stylesheets)
+
 server = app.server
 
 auth = dash_auth.BasicAuth(
@@ -104,4 +105,5 @@ def update_chart_filter_slider(agg,period, year_slider):
         return fig
 
 if __name__ == "__main__":
+        #app.run_server(debug = False, host = '0.0.0.0')
         app.run_server(debug=False)
