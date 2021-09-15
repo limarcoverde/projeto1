@@ -26,7 +26,7 @@ external_stylesheets = [
     {
         "href": "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap",
         "rel": "stylesheet",
-    },
+    }
 ]
 
 app = dash.Dash(__name__,external_stylesheets=external_stylesheets)
@@ -104,4 +104,4 @@ def update_chart_filter_slider(agg,period, year_slider):
         return fig
 
 if __name__ == "__main__":
-        app.run_server(debug=True)
+        app.run_server(debug=False)
